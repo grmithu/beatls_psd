@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+p{
+    font-size: 13px;
+    color: 555555;
+    line-height: 24px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h2{
+    font-size: 24px;
+    color: #353535;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+h3{
+    font-size: 16px;
+    color: #353535;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.valign_center{
+    align-items: center;
+}
+.align_center{
+    justify-content: center;
+}
+.align_space_between{
+    justify-content: space-between;
+}
+.section_heading{
+    text-align: center;
+}
+.section_heading h2{
+    position: relative;
+    display: inline-block;
+}
+.section_heading h2:after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 60px;
+    background: url(../images/header_bar.png);
+    left: 0;
+    bottom: 0;
+}
+
+/*======= Header part css =======*/
+
+#top_header{
+    background-color: #0066cc;
+}
+.header_left p{
+    color: #e7e7e7;
+    font-size: 14px;
+    padding: 5px 0;
+}
+.header_icon a{
+    padding-left: 40px;
+    color: #e7e7e7;
+    font-size: 14px;
+}
+.header_icon a:hover{
+    color: #353535;
+     transition: .7s;
+}
+
+/*======== Munu part css ========*/
+
+.logo{
+    padding: 20px 0;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    color: #353535;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0 7px;
+}
+.menu ul .active a,
+.menu ul li a:hover{
+    color: #0066cc;
+}
+
+/*======== Banner part css ========*/
+
+.banner_items{
+    height: 400px;
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+}
+.banner_items:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: -1;
+}
+.banner_content{
+    max-width: 460px;
+    margin-left: auto;
+    text-align: right;
+}
+#banner .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.banner_content h3{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 400;
+}
+.banner_content h1{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+.banner_content p{
+    font-size: 13px;
+    color: white;
+    margin-bottom: 40px;
+}
+.banner_content a{
+    color: white;
+    padding: 5px 14px;
+    font-weight: 500;
+    border: 1px solid white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.banner_content a:hover{
+    background: #0066cc;
+}
+
+/*======== About part css ========*/
+
+#about_part{
+    padding-top: 50px;
+}
+#about_part .section_heading{
+    margin-bottom: 40px;
+}
+.about_img{
+    width: 40%;
+}
+.about_img img{
+    width: 100%;
+}
+.about_content{
+    width: 60%;
+    padding-left: 20px;
+}
+.about_content p{
+    padding-bottom: 30px;
+}
+
+/*====== Services part css ========*/
+
+#services{
+    padding-top: 50px;
+}
+#services .section_heading{
+    margin-bottom: 65px;
+}
+.services_items{
+    width: 33.33%;
+    padding: 0 10px;
+    text-align: center;
+}
+.services_content{
+    background-color: #f1f1f1;
+    padding: 50px  20px 20px 20px;
+    position: relative;
+}
+.services_icon{
+    height: 81px;
+    width: 81px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.services_icon img{
+    margin-top: 20px;
+    display: inline-block;
+    z-index: -1;
+}
+.services_icon:after{
+    content: '';
+    position: absolute;
+    height: 73px;
+    width: 73px;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.services_icon:before{
+    content: '';
+    position: absolute;
+    height: 69px;
+    width: 69px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.services_content:hover{
+    box-shadow: 0  0 10px rgba(41, 40, 40, 0.4);
+}
+.services_content:hover .services_icon:after{
+    border-color: #5bc5f4;
+}
+.services_content:hover .services_icon:before{
+    background-color: #5bc5f4;
+}
+
+/*======== Portfolio part css =======*/
+
+#portfolio{
+    padding-top: 50px;
+}
+.portfolio_items{
+    width: 25%;
+    padding: 0 10px;
+}
+.portfolio_image img{
+    display: block;
+    width: 100%;
+}
+.portfolio_image{
+    margin-bottom: 20px;
+    position: relative;
+}
+#portfolio .section_heading{
+    margin-bottom: 30px;
+}
+.portfolio_image .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: .5s;
+}
+.portfolio_image .overlay a{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #5bc5f4;
+    color: #fff;
+    display: inline-block;
+}
+.portfolio_image:hover .overlay{
+    transform: scale(1);
+}
+
+/*======== Our team part css ========*/
+
+#our_team{
+    padding-top: 50px;
+}
+#our_team .section_heading{
+    margin-bottom: 30px;
+}
+.team_items{
+    width: 25%;
+    padding: 0 10px;
+    text-align: center;
+}
+.team_image{
+    position: relative;
+    overflow: hidden;
+}
+.team_image img{
+    width: 100%;
+    display: block;
+}
+.team_image .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    opacity: 0;
+}
+.team_image:hover .overlay{
+    width: 82px;
+    opacity: 1;
+}
+.team_image .overlay a{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin: 5px 0;
+}
+.team_image .overlay a:hover{
+    background: #5bc5f4;
+}
+
+/*======= Testimonial part css =======*/
+
+#testimonial{
+    padding-top: 50px;
+}
+.testimonial_items{
+    width: 50%;
+    padding: 40px 10px 40px;
+}
+.testimonial_img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: auto;
+}
+.testimonial_content{
+    background: #f1f1f1;
+    padding: 15px;
+    text-align: center;
+    margin-top: 36px;
+    position: relative;
+}
+.testimonial_content:after{
+    content: '';
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid #f1f1f1;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
+}
+.testimonial_content .testimonial_icon{
+    color: skyblue;
+}
+.testimonial_content h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.testimonial_content h5{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*======= Footer part css ========*/
+
+#main_footer{
+    padding: 50px;
+    background-color: #353535;
+    margin-top: 50px;
+}
+.footer_about{
+    width: 25%;
+}
+.footer_about p{
+    color: #fff;
+    margin-top: 15px; 
+}
+.footer_contact{
+    width: 25%;
+}
+.footer_contact h2{
+    color: #fff;
+}
+.footer_contact .row{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.con_text a{
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    padding-left: 10px;
+}
+.con_icon i{
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    background: #5bc5f4;
+    margin: 10px 10px 15px 0;
+}
+.footer_link h2{
+    color:#fff;
+}
+.footer_link{
+    width: 20%;
+}
+.footer_link ul li{
+    margin-top: 20px;
+}
+.footer_link ul li a{
+    font-size: 15px;
+    color:white;
+}
+.footer_link ul li a:hover{
+    color: #5bc5f4;
+}
+.footer_photo{
+    width: 30%;
+}
+.footer_photo h2{
+    color: #fff;
+}
+.photos_items{
+    width: 33.33%;
+    margin-top: 20px;
+}
+
+/*======== Footer bottom part css ========*/
+
+#footerbtm{
+    width: 100%;
+    background: #161111ae;
+}
+#footerbtm p{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 50px;
+  text-align: center;
+}
+
+
+
